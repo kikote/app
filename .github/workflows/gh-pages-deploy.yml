@@ -11,6 +11,7 @@ jobs:
       - name: Setup Node.js for use with actions
         uses: actions/setup-node@v1.1.0
         with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           version: 12.x
       - name: Checkout branch
         uses: actions/checkout@v2
@@ -19,8 +20,7 @@ jobs:
         run: npm ci
 
       - name: Run deploy script
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
         run: |
           git config user.name "pvernier" && git config user.email "pvernier82@gmail.com"
           npm run deploy
