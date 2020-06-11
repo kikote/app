@@ -2,7 +2,7 @@
   "name": "kikote",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kikote.github.io/app/",
+  "homepage": "/app",
   "dependencies": {
     "cra-template": "1.0.3",
     "gh-pages": "^2.2.0",
