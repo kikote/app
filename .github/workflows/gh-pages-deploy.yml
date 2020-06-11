@@ -24,5 +24,5 @@ jobs:
         run: |
           git config user.name "pvernier" && git config user.email "pvernier82@gmail.com"
           npm run deploy
-        with:
-          token: "${{ github.token }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
