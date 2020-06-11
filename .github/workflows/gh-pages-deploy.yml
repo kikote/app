@@ -13,7 +13,7 @@ jobs:
         with:
           version: 12.x
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.KIKOTE_DEPLOY_SECRET }}
       - name: Checkout branch
         uses: actions/checkout@v2
 
@@ -23,6 +23,7 @@ jobs:
       - name: Run deploy script
 
         run: |
+          git config user.name "pvernier" && git config user.email "pvernier82@gmail.com"
           npm run deploy
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.KIKOTE_DEPLOY_SECRET }}
