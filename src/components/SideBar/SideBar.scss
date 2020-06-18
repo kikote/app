@@ -1,12 +1,14 @@
-.toolbar {
+@import "../../assets/style/globals";
+
+.sidebar {
   padding-bottom: 0.5rem;
-  background-color: #333;
+  background-color: $color-primary;
   display: grid;
   grid-template-rows: 8% 1fr 5%;
   justify-content: center;
 }
 
-.toolbar-footer {
+.sidebar-footer {
   display: grid;
   align-self: end;
 }

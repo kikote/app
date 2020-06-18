@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
-
+// import { connect } from "react-redux";
 import L from "leaflet";
+
+// import * as actions from "../../store/actions/actions";
 
 import { dropHandler, dragOverHandler } from "../../utils/events";
 
@@ -22,4 +24,32 @@ const Map = (props) => {
   return <div id="map" onDrop={dropHandler} onDragOver={dragOverHandler}></div>;
 };
 
+// const mapStateToProps = (state) => {
+//   return {};
+// };
+
+// const mapDispatchToProps = (dispatch, ownProps) => {
+//   return {
+//     // onSetSelectedStation: (data) => {
+//     //   dispatch(actions.setSelectedStation(data));
+//     // },
+//     // onSetActiveLayerName: (data) => {
+//     //   dispatch(actions.setActiveLayerName(data));
+//     // },
+//     // onSetChartData: (data) => {
+//     //   dispatch(
+//     //     actions.setProperty({
+//     //       type: ownProps.fileType,
+//     //       key: "chartData",
+//     //       value: data,
+//     //     })
+//     //   );
+//     // },
+//     // onSetLevel: (data) => {
+//     //   dispatch(actions.setLevel(data));
+//     // },
+//   };
+// };
+
+// export default connect(mapStateToProps, mapDispatchToProps)(Map);
 export default Map;

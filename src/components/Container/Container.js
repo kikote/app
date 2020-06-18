@@ -1,6 +1,6 @@
 import React from "react";
 
-import Toolbar from "../Toolbar/Toolbar";
+import Toolbar from "../SideBar/SideBar";
 import Map from "../Map/Map";
 
 import "./Container.scss";
