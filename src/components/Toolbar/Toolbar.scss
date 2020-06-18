@@ -1,10 +1,12 @@
 .toolbar {
-  flex: 0 0 4%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 6rem;
-  //   padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
   background-color: #333;
+  display: grid;
+  grid-template-rows: 8% 1fr 5%;
+  justify-content: center;
+}
+
+.toolbar-footer {
+  display: grid;
+  align-self: end;
 }
