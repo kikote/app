@@ -2,9 +2,12 @@ import React, { useEffect } from "react";
 
 import L from "leaflet";
 
+import { dropHandler, dragOverHandler } from "../../utils/events";
+
 import "./Map.scss";
 
 const Map = (props) => {
+  // Initialiaze map when component is mounted
   useEffect(() => {
     var map = L.map("map").setView([18, 0], 3);
     L.tileLayer(
@@ -16,7 +19,7 @@ const Map = (props) => {
     ).addTo(map);
   }, []);
 
-  return <div id="map"></div>;
+  return <div id="map" onDrop={dropHandler} onDragOver={dragOverHandler}></div>;
 };
 
 export default Map;

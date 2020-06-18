@@ -1,10 +1,12 @@
 import React from "react";
 
+import { dropHandler, dragOverHandler } from "../../utils/events";
+
 import "./Toolbar.scss";
 
 const Toolbar = (props) => {
   return (
-    <div className="toolbar">
+    <div className="toolbar" onDrop={dropHandler} onDragOver={dragOverHandler}>
       <div className="toolbar-header"></div>
       <div className="toolbar-body"></div>
       <div className="toolbar-footer">
