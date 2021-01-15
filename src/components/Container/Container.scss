@@ -1,4 +1,7 @@
 .container {
   display: grid;
-  grid-template-columns: minmax(6rem, 4%) 1fr;
+  align-items: stretch;
+  justify-items: stretch;
+  justify-content: stretch;
+  align-content: stretch;
 }

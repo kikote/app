@@ -11,7 +11,14 @@ import "./Map.scss";
 const Map = (props) => {
   // Initialiaze map when component is mounted
   useEffect(() => {
-    var map = L.map("map").setView([18, 0], 3);
+    const map = L.map("map").setView([18, 0], 3);
+
+    // L.control
+    //   .zoom({
+    //     position: "bottomright",
+    //   })
+    //   .addTo(map);
+
     L.tileLayer(
       "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
       {

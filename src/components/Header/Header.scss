@@ -1,0 +1,17 @@
+.header {
+  display: grid;
+  grid-template-columns: minmax(4%, 6rem) 1fr;
+  align-items: center;
+  background-color: #06d6a0;
+
+  .menu-switcher {
+    font-size: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+
+  .header-title {
+    display: grid;
+    justify-items: center;
+  }
+}
