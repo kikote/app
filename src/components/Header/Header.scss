@@ -1,17 +1,24 @@
+@import "../../assets/style/globals";
+
 .header {
   display: grid;
   grid-template-columns: minmax(4%, 6rem) 1fr;
   align-items: center;
-  background-color: #06d6a0;
+  background-color: $color-secondary;
 
   .menu-switcher {
     font-size: 2rem;
     margin-left: 2rem;
     cursor: pointer;
+    color: $color-primary;
   }
 
   .header-title {
     display: grid;
     justify-items: center;
+
+    h1 {
+      color: $color-primary;
+    }
   }
 }
