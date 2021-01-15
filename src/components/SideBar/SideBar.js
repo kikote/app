@@ -1,6 +1,6 @@
 import React from "react";
 
-import { dropHandler, dragOverHandler } from "../../utils/events";
+// import { dropHandler, dragOverHandler } from "../../utils/events";
 
 import LayerList from "./LayersList/LayersList";
 
