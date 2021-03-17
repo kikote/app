@@ -7,15 +7,18 @@ const Header = (props) => {
 
   const handleClick = () => {
     const iconSwitcher = document.getElementsByClassName("menu-switcher")[0];
+    const sideBarContainer = document.getElementsByClassName(
+      "sidebar-container"
+    )[0];
     if (menuOpen) {
-      document.getElementById("sidebar-container").style.display = "none";
+      sideBarContainer.style.display = "none";
       setMenuOpen(false);
       // &#9776; is the hamburger icon
       iconSwitcher.innerHTML = "&#9776;";
     } else {
-      document.getElementById("sidebar-container").style.display = "grid";
-      document.getElementById("sidebar-container").style.opacity = 1;
-      document.getElementById("sidebar-container").style.visibility = "visible";
+      sideBarContainer.style.display = "grid";
+      sideBarContainer.style.opacity = 1;
+      sideBarContainer.style.visibility = "visible";
       setMenuOpen(true);
       // &#10799; is the close icon
       iconSwitcher.innerHTML = "&#10799;";
