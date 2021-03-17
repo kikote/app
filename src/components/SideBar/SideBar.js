@@ -2,7 +2,8 @@ import React from "react";
 
 // import { dropHandler, dragOverHandler } from "../../utils/events";
 
-import LayerList from "./LayersList/LayersList";
+import LayerList from "../LayersList/LayersList";
+import AddLayer from "../AddLayer/AddLayer";
 
 import "./SideBar.scss";
 
@@ -15,7 +16,9 @@ const SideBar = (props) => {
         onDrop={dropHandler}
         onDragOver={dragOverHandler}
       > */}
-      <div className="sidebar-header"></div>
+      <div className="sidebar-header">
+        <AddLayer />
+      </div>
       <div className="sidebar-body">
         <LayerList />
       </div>

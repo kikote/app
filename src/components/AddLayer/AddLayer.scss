@@ -1,0 +1,13 @@
+@import "../../assets/style/globals";
+
+.sidebar-header-addlayer {
+  padding: 1rem;
+  border: 1px solid $color-secondary;
+  border-radius: 25px;
+  width: 80%;
+  text-align: center;
+  color: $color-secondary;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: auto;
+}
