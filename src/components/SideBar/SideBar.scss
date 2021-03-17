@@ -1,9 +1,9 @@
 @import "../../assets/style/globals";
 
-#sidebar-container {
+.sidebar-container {
   height: calc(100% - 5rem);
-  z-index: 1001;
-  width: 10%;
+  z-index: 401; /* minimal value so that sidebar is on top of map */
+  width: 15%;
   position: fixed !important;
   display: grid;
   opacity: 0;
@@ -20,4 +20,46 @@
   padding-bottom: 0.5rem;
   align-self: end;
   color: $color-secondary;
+}
+
+@media all and (max-width: 1200px) {
+  .sidebar-container {
+    width: 20%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .sidebar-container {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .sidebar-container {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .sidebar-container {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .sidebar-container {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .sidebar-container {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .sidebar-container {
+    width: 100%;
+  }
 }

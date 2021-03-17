@@ -9,7 +9,7 @@ import "./SideBar.scss";
 const SideBar = (props) => {
   console.log("RENDERING SideBar");
   return (
-    <div id="sidebar-container">
+    <div className="sidebar-container">
       {/* <div
         className="sidebar"
         onDrop={dropHandler}
