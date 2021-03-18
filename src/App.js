@@ -5,13 +5,13 @@ import Container from "./components/Container/Container";
 
 import "./App.scss";
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
       <Container />
     </>
   );
-}
+};
 
 export default App;
